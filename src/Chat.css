@@ -32,6 +32,9 @@
   padding: 30px;
   overflow: scroll;
 }
+.chat__body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
 
 .chat__message {
   position: relative;
@@ -78,12 +81,13 @@
   border-radius: 30px;
   padding: 10px;
   border: none;
+  outline-width: 0;
 }
 .chat__footer > form > button {
-  display: none;
+  color: green;
 }
 .chat__footer > .MuiSvgIcon-root {
   padding: 10px;
   color: gray;
+  outline-width: 0;
 }
-

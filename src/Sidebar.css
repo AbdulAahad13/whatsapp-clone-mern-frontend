@@ -36,10 +36,11 @@
   height: 35px;
   width: 100%;
   border-radius: 25px;
+  color: gray;
 }
 
 .sidebar__searchContainer > .MuiSvg-Icon-root {
-  color: gray;
+  color: gray !important;
   padding: 10px;
 }
 
@@ -49,8 +50,12 @@
   outline-width: 0;
 }
 
-.sidebar__chats{
+.sidebar__chats {
   flex: 1;
   background-color: white;
-  overflow: scroll;
+  overflow-y: scroll;
+}
+
+.sidebar__chats::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }

@@ -2,13 +2,14 @@ import { Avatar } from '@material-ui/core'
 import React from 'react'
 import './SidebarChat.css'
 
-function SidebarChat() {
+function SidebarChat({ title , message, pic}) {
     return (
         <div className='sidebarChat'>
-            <Avatar />
-            <div className="sidebarChat__ing">
-                <h2>Room name</h2>
-                <p>last message</p>
+            <Avatar src={pic} />
+            <div className="sidebarChat__info">
+                <h2>{title} </h2>
+                <p> {message}</p>
+                
             </div>
         </div>
     )
